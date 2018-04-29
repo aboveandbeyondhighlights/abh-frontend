@@ -7,7 +7,6 @@ class Navigation extends Component {
 
   handleClick = (e) => {
     this.props.dispatch(setActiveTab(e.key))
-    console.log(this.props.dispatch(setActiveTab(e.key)))
   }
 
   render() {
@@ -33,7 +32,7 @@ class Navigation extends Component {
 
 function mapStateToProps(state) {
   return {
-    current: state.current
+    current: state.activeTab.current
   };
 }
 
