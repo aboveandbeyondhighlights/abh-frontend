@@ -1,5 +1,6 @@
 const initialState = {
-  current: ''
+  current: '',
+  session: !!sessionStorage.jwt
 };
 
 export default initialState;

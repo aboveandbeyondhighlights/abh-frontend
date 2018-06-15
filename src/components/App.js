@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation';
-import WrappedLoginForm from './LoginForm';
+import LoginFormContainer from './LoginFormContainer';
+import RegisterFormContainer from './RegisterFormContainer';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Navigation />
-        <WrappedLoginForm />
+        <LoginFormContainer />
+        {/* <RegisterFormContainer /> */}
       </div>
     );
   }
